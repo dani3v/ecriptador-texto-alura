@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kalam:wght@300;400;700&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --color-navy: #102c57;
+  --color-night: #183a6de6;
+  --color-blue: #1D9EDE;
+  --color-pink: #ffb1b1;
+  --color-light: #ffcbcb;
+  --font-kalam: "Kalam", cursive;
+  --font-montserrat: "Montserrat", sans serif;
+  --font-inter: "Inter", sans serif;
+  --font-krona-one: "Krona One", sans serif;
+}
+
+* {
+  background-color: var(--color-navy);
+  padding: 0%;
+  margin: 0%;
+}
+
+header{
+  justify-content: center;
+  display: flex;
+}
+
+.logo {
+  padding-top: 10px;
+  margin-left: 10px;
+  width: 10%;
+}
+
+.titulo{
+  display: flex;
+  justify-content: center;
+}
+
+.dev{
+  font-family: var(--font-krona-one);
+}
+
+main {
+  display: flex;
+  margin-bottom: 50px;
+  margin-left: 80px;
+}
+
+textarea {
+  border-radius: 10px;
+}
+
+#input{
+  border: none;
+  font-size: 32px;
+  font-family: var(--font-kalam);
+  color: var(--color-light);
+}
+
+::placeholder{
+  color: var(--color-night);
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+#info-text {
+  color: var(--color-light);
+  font-family: var(--font-montserrat);
+  font-size: 12px;
+  font-weight: 100;
+}
+
+#info-star {
+  background-color: var(--color-night);
+}
+
+#output{
+  border: dashed var(--color-pink);
+}
+
+.botones{
+  border-radius: 10px;
+  border: 0.05px solid;
+  font-family: var(--font-montserrat);
+}
+
+.botones:hover{
+  color: red;
+}
+
+.botones-area{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+#btn-encriptar {
+  background-color: var(--color-blue);
+  border-color: var(--color-light);
+  color: var(--color-navy);
+  font-size: 16px;
+  font-weight: 400;
+  padding: 24px;
+}
+
+#btn-desencriptar {
+  background-color: var(--color-navy);
+  border-color: var(--color-light);
+  color: var(--color-pink);
+  font-size: 16px;
+  font-weight: 400px;
+  padding: 24px;
+}
+
+#btn-copiar {
+  background-color: var(--color-light);
+  border-color: var(--color-navy);
+  color: var(--color-navy);
+  font-size: 16px;
+  font-weight: 400px;
+  padding: 24px;
+}
+
+footer{
+  display: block;
+  justify-content: center;
+  background-color: var(--color-blue);
+  font-family: var(--font-inter);
+  font-size: 16px;
+  padding: 5px;
+}
+
+.bamboo{
+  size: 18px;
+}
