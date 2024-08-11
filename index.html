@@ -1,51 +1,69 @@
 <!DOCTYPE html>
 <html lang="es-mx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador de Texto</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Encriptador de Texto</title>
+    <link rel="icon" href="./img/key.png" type="image/x-icon" />
 
-<link rel="icon" href="./img/key.png" type="image/x-icon">
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-  <link rel="stylesheet" href="style.css" />
-</head>
+  <body>
+    <header class="header">
+      <img src="./img/Logo.png" alt="Logo de Alura" class="header-logo" />
+      <h1 class="header-titulo">Encriptador de texto</h1>
+    </header>
 
-<body>
-  <header class="header">
-    <img src="./img/Logo.png" alt="Logo de Alura" class=" header-logo" />
-    <h1 class="header-titulo">Encriptador de texto</h1>
-  </header>
+    <main>
+      <section>
+        <textarea
+          id="input"
+          placeholder="ingrese el codigo aqui..."
+          cols="30"
+          rows="10"
+        ></textarea>
+        <div class="info">
+          <img
+            id="info-exclamation"
+            src="./img/exclamation-bubble.png"
+            alt="exclamacion en forma de estrella"
+          />
+          <h6 id="info-text">Solo letras minusculas y sin acentos</h6>
+        </div>
+        <div class="botones-area">
+          <button class="botones" id="btn-encriptar">Encriptar</button>
+          <button class="botones" id="btn-desencriptar">Desencriptar</button>
+        </div>
+      </section>
 
-  <main>
-    <section>
-      <textarea id="input" placeholder="ingrese el codigo aqui" cols="30" rows="10"></textarea>
-      <div class="info">
-        <img id="info-star" src="./img/estrella.png" alt="exclamacion en forma de estrella" />
-        <h6 id="info-text">Solo letras minusculas y sin acentos</h6>
+      <div class="output-div">
+        <section class="output-section">
+          <img
+            class="panda"
+            src="./img/panda-small-img.png"
+            alt="Kawaii confused panda"
+          />
+          <textarea class="output" cols="20" rows="10"></textarea>
+        </section>
+        <div>
+          <button class="botones" id="btn-copiar">Copiar</button>
+        </div>
       </div>
-      <div class="botones-area">
-        <button class="botones" id="btn-encriptar">Encriptar</button>
-        <button class="botones" id="btn-desencriptar">Desencriptar</button>
-      </div>
-    </section>
+      <script src="app.js"></script>
+    </main>
 
-    <section>
-      <img class="panda" src="./img/panda-small-img.png" alt="Kawaii confused panda" />
-      <textarea id="output" cols="20" rows="10"></textarea>
-    </section>
-    <div>
-      <button class="botones" id="btn-copiar" disabled="true">Copiar</button>
-    </div>
+    <footer class="footer">
+      <img
+        class="footer-bamboo"
+        src="./img/bamboo-small-icon.png"
+        alt="Three bamboos outlined"
+      />
+      <p class="footer-text">Alura Challenge 1 by Daniela Velasco 2024</p>
+    </footer>
     <script src="app.js"></script>
-  </main>
-
-  <footer class="footer">
-    <img class="bamboo" src="./img/bamboo-small-icon.png" alt="Three bamboos outlined">
-    <p class="footer-text">Desarrollado por Daniela Velasco</p>
-  </footer>
-
-  <!--COMMENTS-->
-</body>
-
+    <!--COMMENTS-->
+  </body>
 </html>
