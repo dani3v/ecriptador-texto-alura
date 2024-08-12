@@ -1,5 +1,5 @@
-const textArea = document.querySelector("#input");
-const mensaje = document.querySelector(".output");
+const textArea = document.querySelector("#input-txt-area");
+const mensaje = document.querySelector("#output-txt-area");
 
 // La letra "a" es convertida para "ai"
 // La letra "e" es convertida para "enter"
@@ -7,7 +7,14 @@ const mensaje = document.querySelector(".output");
 // La letra "o" es convertida para "ober"
 // La letra "u" es convertida para "ufat"
 
-function encriptar(stringEncryiptado) {
+function btnEncriptar() {
+  const txtEncriptado = encriptar(txtArea.value);
+  mensaje.value = txtEncriptado;
+  txtArea.value = "";
+  mensaje.style.backagroundImage = "none";
+}
+
+function encriptar(stringEncriptado) {
   let llaves = [
     { a: "ai" },
     { e: "enter" },
@@ -16,9 +23,42 @@ function encriptar(stringEncryiptado) {
     { u: "ufat" },
   ];
   console.table(llaves);
-  stringEncryiptado = stringEncryiptado.toLowerCase();
+  stringEncriptado = stringEncriptado.toLowerCase();
   for (let i = 0; i < llaves.length; i++) {
-    if (stringEncryiptado.includes(llaves)) {
+    if (stringEncriptado.includes(llaves[i][0])) {
+      stringEncriptado = stringEncriptado.replaceAll(
+        llaves[i][0],
+        llaves[i][1]
+      );
     }
   }
+  return stringEncriptado;
+}
+
+function btnDesencriptar() {
+  const txtEncriptado = desencriptar(txtArea.value);
+  mensaje.value = txtDesencriptado;
+  txtArea.value = "";
+  mensaje.style.backagroundImage = "none";
+}
+
+function desencriptar(stringDesencriptado) {
+  let llaves = [
+    { a: "ai" },
+    { e: "enter" },
+    { i: "imes" },
+    { o: "ober" },
+    { u: "ufat" },
+  ];
+  console.table(llaves);
+  stringDesencriptado = stringDesencriptado.toLowerCase();
+  for (let i = 0; i < llaves.length; i++) {
+    if (stringDesencriptado.includes(llaves[i][1])) {
+      stringDesencriptado = stringDesencriptado.replaceAll(
+        llaves[i][1],
+        llaves[i][0]
+      );
+    }
+  }
+  return stringDesencriptado;
 }
