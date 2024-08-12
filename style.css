@@ -38,8 +38,8 @@ header {
 
 .header-titulo {
   color: white;
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
   font-family: var(--font-baumans);
   font-size: 3.5rem;
   font-weight: 25rem;
@@ -49,6 +49,7 @@ main {
   display: flex;
   margin-bottom: 3.125rem;
   margin-left: 5rem;
+  align-content: center;
 }
 
 textarea {
@@ -106,7 +107,9 @@ textarea:focus {
   margin-left: 6.125rem;
   margin-top: 1.25rem;
   padding-left: 1.25rem;
-  position: fixed;
+  width: 10rem;
+  height: 20rem;
+  position: relative;
 }
 
 .botones {
