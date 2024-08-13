@@ -33,13 +33,13 @@
           <h6 id="info-text">Solo letras minusculas y sin acentos</h6>
         </div>
         <div class="botones-area">
-          <button class="botones" id="btn-encriptar" onclick="btnEncriptar">
+          <button class="botones" id="btn-encriptar" onclick="btnEncriptar()">
             Encriptar
           </button>
           <button
             class="botones"
             id="btn-desencriptar"
-            onclick="btnDesencriptar"
+            onclick="btnDesencriptar()"
           >
             Desencriptar
           </button>
@@ -47,10 +47,13 @@
       </section>
 
       <div class="output-div">
-        <textarea id="output-txt-area" cols="20" rows="10"></textarea>
-        <div class="output-div-btn">
-          <button class="botones" id="btn-copiar">Copiar</button>
-        </div>
+        <textarea
+          id="output-txt-area"
+          placeholder="Ningun mensaje fue encontrado"
+          cols="20"
+          rows="10"
+        ></textarea>
+        <!-- <button class="botones" id="btn-copiar">Copiar</button> -->
       </div>
     </main>
 

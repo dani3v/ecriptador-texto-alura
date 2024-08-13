@@ -11,7 +11,11 @@ function btnEncriptar() {
   const txtEncriptado = encriptar(textArea.value);
   mensaje.value = txtEncriptado;
   textArea.value = "";
-  mensaje.style.backagroundImage = "none";
+  // Ocultar la imagen de fondo
+  mensaje.style.backgroundImage = "none";
+  // Asegurarse de que el textarea sea visible y tenga espacio para el texto
+  mensaje.style.height = "fixed";
+  mensaje.style.visibility = "visible"; // Si se necesita mostrar el textarea
 }
 
 function encriptar(stringEncriptado) {
@@ -41,7 +45,7 @@ function btnDesencriptar() {
 
   mensaje.value = txtDesencriptado;
   textArea.value = "";
-  mensaje.style.backagroundImage = "none";
+  mensaje.style.backgroundImage = "none";
 }
 
 function desencriptar(stringDesencriptado) {
