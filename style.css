@@ -23,29 +23,31 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin: 2rem 1rem 0.25rem 1rem;
+  padding: 1rem;
+  align-items: center;
 }
 
 header {
-  display: grid;
-  grid-template-rows: repeat(1, fr);
-  grid-template-columns: repeat(2, fr);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex-shrink: inherit;
   justify-content: center;
   width: 100%;
   padding: 1rem;
+  height: 3%;
+  position: relative;
 }
 
 .header-logo {
   padding-top: 0.625rem;
-  margin-right: 10rem;
-  margin-left: 3rem;
+  margin: 0 2rem;
   width: 4rem;
-  grid-column-start: 1;
 }
 
 .header-titulo {
   color: white;
-  grid-column-start: 2;
-  display: flex;
   align-self: center;
   font-family: var(--font-baumans);
   font-size: 3.5rem;
@@ -54,9 +56,10 @@ header {
 
 main {
   display: flex;
-  margin: 3rem 5rem;
+  flex-wrap: wrap;
   align-content: center;
   padding: 5%;
+  margin: 2rem 1rem 0.25rem 1rem;
 }
 
 textarea {
@@ -72,6 +75,7 @@ textarea:focus {
 }
 
 #input-txt-area {
+  display: flex;
   flex-wrap: wrap;
   background-color: var(--color-navy);
   border: none;
@@ -79,6 +83,9 @@ textarea:focus {
   font-family: var(--font-kalam);
   color: var(--color-light);
   text-transform: lowercase;
+  width: 22rem;
+  margin-left: 1.5rem;
+  margin-right: 2rem;
 }
 
 #input-txt-area::placeholder {
@@ -89,6 +96,7 @@ textarea:focus {
   display: flex;
   flex-direction: row;
   gap: 1rem;
+  margin: 1.5rem 0;
 }
 
 #info-exclamation {
@@ -103,13 +111,13 @@ textarea:focus {
   /* font-weight: 6.25rem; */
 }
 
-.output-div {
+/* .output-div {
   display: flex;
   flex-wrap: wrap;
   flex-flow: column;
   align-content: center;
   margin-left: 6rem;
-}
+} */
 
 #output-txt-area {
   border: 0.125rem dashed var(--color-pink);
@@ -122,8 +130,9 @@ textarea:focus {
   position: static;
   color: var(--color-pink);
   padding: 1.25rem;
+  margin: 2rem;
   width: 20rem;
-  height: 29rem;
+  height: 25rem;
   font-size: 1.5rem;
 }
 
@@ -141,7 +150,10 @@ textarea:focus {
   border-radius: 0.625rem;
   border: 0.1rem solid;
   font-family: var(--font-montserrat);
+  font-weight: 600;
   text-align: center;
+  width: 12rem;
+  height: 4rem;
 }
 
 .botones:hover {
@@ -150,7 +162,9 @@ textarea:focus {
 
 .botones-area {
   display: flex;
-  gap: 1.5rem;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2rem;
 }
 
 #btn-encriptar {
@@ -179,9 +193,6 @@ textarea:focus {
   color: var(--color-navy);
   width: 6.25rem;
   height: auto;
-
-  grid-row-start: 2;
-  grid-column-start: 2;
 } */
 
 footer {
@@ -190,13 +201,11 @@ footer {
   align-items: center;
   background-color: var(--color-blue);
   font-size: 1rem;
-  padding-left: 31.25rem;
-  padding-right: 31.25rem;
   padding-top: 0.938rem;
-  gap: 1.5rem;
   position: relative;
   width: 100%;
-  height: auto;
+  height: 2%;
+  gap: 1rem;
 }
 
 .footer-bamboo {
