@@ -20,13 +20,11 @@ function btnEncriptar() {
 
 function encriptar(stringEncriptado) {
   let llaves = [
-    ["h", "horror"],
-    ["a", "ai"],
     ["e", "enter"],
     ["i", "imes"],
+    ["a", "ai"],
     ["o", "ober"],
     ["u", "ufat"],
-    ["p", "pato"],
   ];
   console.table(llaves);
   stringEncriptado = stringEncriptado.toLowerCase();
@@ -53,9 +51,9 @@ function btnDesencriptar() {
 
 function desencriptar(stringDesencriptado) {
   let llaves = [
-    ["a", "ai"],
     ["e", "enter"],
     ["i", "imes"],
+    ["a", "ai"],
     ["o", "ober"],
     ["u", "ufat"],
   ];
